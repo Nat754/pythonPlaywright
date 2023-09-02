@@ -13,6 +13,8 @@ def browser_fixture():
         browser.close()
 
 
+# @pytest.mark.skip_browser("firefox")  # Пропустить тест браузером
+# @pytest.mark.only_browser("chromium")  # Запуск в определенном браузере
 def test_add_todo(page):
     page.goto("https://playwright-todomvc.antonzimaiev.repl.co/#/")
     page.get_by_placeholder("What needs to be done?").click()
