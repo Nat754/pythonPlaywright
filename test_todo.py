@@ -1,4 +1,4 @@
-import pytest
+# import pytest
 
 
 # @pytest.mark.skip_browser("firefox")  # Пропустить тест браузером
@@ -31,4 +31,17 @@ pytest --slowmo 1000
  
 Список поддерживаемых девайсов вы сможете  посмотреть 
 https://github.com/microsoft/playwright/blob/main/packages/playwright-core/src/server/deviceDescriptorsSource.json
+
+--output Каталог для артефактов, создаваемых тестами (по умолчанию: test-results).
+
+--tracing Записывать ли трассировку для каждого теста. on, off или retain-on-failure (по умолчанию: off).
+
+--video Записывать ли видео для каждого теста. on, off или retain-on-failure (по умолчанию: off).
+
+--screenshot Должен ли автоматически делаться снимок экрана после каждого теста. on, off или only-on-failure
+ (по умолчанию: off).
+
+--full-page-screenshot - Следует ли делать скриншот всей страницы при ошибке. По умолчанию снимается только область
+ просмотра. Требуется, чтобы параметр --screenshot был включен (по умолчанию: off).
+    
 """

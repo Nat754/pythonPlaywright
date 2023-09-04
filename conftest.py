@@ -33,7 +33,7 @@ def page(playwright: sync_playwright) -> None:
     browser = playwright.chromium.launch(headless=False, slow_mo=1000)
     context = browser.new_context()
     page = context.new_page()
-    page.set_viewport_size({"width": 1800, "height": 1200})
+    page.set_viewport_size({"width": 1600, "height": 800})
     yield page
     page.close()
     context.close()
